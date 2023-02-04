@@ -1,0 +1,76 @@
+@import url("fonts.css");
+/* Шрифты */
+
+@import url("reset.css");     
+/* Обнуление */
+
+body {
+	font-family: 'Poppins';
+	font-size: 14px;
+	line-height: 1.79;
+	color: #6C757D;
+}
+
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+[class*="__text"] {
+	max-width: 814px;
+	margin: 0 auto;
+}
+
+.header {
+	padding-top: 40px;
+}
+
+.header,
+.main,
+.main__content .content__text,
+.indent {
+	margin-bottom: 80px;
+}
+
+.footer {
+	padding-bottom: 60px;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #212529;
+	margin-bottom: 40px;
+}
+
+.title-1 {
+	max-width: 406px;
+}
+
+.title-2 {
+	max-width: 605px;
+}
+
+.content__text p {
+	margin-bottom: 24px;
+}
+
+p.null {
+	margin-bottom: 0;
+}
+
+img {
+	border-radius: 5px;
+}
+
+.content__img {
+	font-size: 0;
+}
+
+.img {
+	margin-right: 30px;
+}
+
+
