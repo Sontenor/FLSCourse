@@ -126,10 +126,32 @@
 
 /* ================= SPEAKER STYLE ================ */
 
-.swiper {
+.speaker {
 	font-family: 'Inter';
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-	margin-bottom: 100px;
+	padding-bottom: 100px;
+}
+
+.speaker__content {
+	background:linear-gradient(114deg, rgba(244,247,255,1) 64%, rgba(219,228,255,1) 64%, rgba(224,231,252,1) 69%, rgba(225,233,255,1) 61%, rgba(207,219,255,1) 56%, rgba(244,247,255,1) 90%);
+}
+
+.speaker__container {
+	max-width: 1140px;
+}
+
+.speaker__body {
+	padding: 83px 0;
+}
+
+.speaker__body .body__text {
+	max-width: 570px;
+	margin-right: 179px;
+}
+
+.speaker__body .body__text,
+.speaker__body img {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .speaker__cost {
@@ -146,7 +168,6 @@
 	font-size: 36px;
 	line-height: 1.25;
 	color: #212B36;
-	max-width: 470px;
 	margin-bottom: 15px;
 }
 
@@ -155,7 +176,6 @@
 	font-size: 16px;
 	line-height: 1.5;
 	color: #637381;
-	max-width: 570px;
 	margin-bottom: 35px;
 }
 
@@ -177,19 +197,11 @@
 
 .speaker__button:hover {
 	background-color: #1ebdc5;
-	
 }
 
-.speaker__body {
-	padding: 145px 15px 146px;
-	max-width: 1140px;
-	margin: 0 auto;
+.swiper {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
-.speaker__bg {
-	background: url('../img/speaker_1.png') 76% 50% no-repeat,linear-gradient(114deg, rgba(244,247,255,1) 64%, rgba(219,228,255,1) 64%, rgba(224,231,252,1) 69%, rgba(225,233,255,1) 61%, rgba(207,219,255,1) 56%, rgba(244,247,255,1) 90%);
-}
-
 
 .swiper-button-prev {
 	left: 35px;
