@@ -8,13 +8,6 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-	font-weight: 700;
-	font-size: 35px;
-	line-height: 1.31;
-	text-align: center;
-}
-
 h2 {
 	font-size: 30px;
 	color: #12503f;
@@ -121,7 +114,7 @@ h2 {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: url('../img/Element_design/Shape.svg') 0 0 no-repeat;
+	background: url('../img/Element_design/shape.svg') 0 0 no-repeat;
 }
 
 .swiper-button-prev {
