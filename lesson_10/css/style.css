@@ -1,0 +1,285 @@
+@import url("fonts.css");
+/* Шрифты */
+
+@import url("reset.css");     
+/* Обнуление */
+
+
+body {
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 2.08;
+	color: rgba(73, 80, 87, 0.5);
+}
+
+img {
+	border-radius: 3px;
+}
+
+.logo {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.38;
+	color: #495057;
+}
+
+.logo span {
+	color: #DDBEA9;
+}
+
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header__container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 76px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.header__logo {
+	flex: 0 1 155px;
+}
+
+.menu__list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	gap: 25px;
+}
+
+[class$="__link"] {
+	border-bottom: 2px solid transparent;
+}
+
+[class$="__link"]:hover {
+	border-bottom: 2px solid #DDBEA9;
+	transition: all 0.1s ease 0s;
+	-webkit-transition: all 0.1s ease 0s;
+	-moz-transition: all 0.1s ease 0s;
+	-ms-transition: all 0.1s ease 0s;
+	-o-transition: all 0.1s ease 0s;
+}
+
+.header__social {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.social__links{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	gap: 25px;
+}
+
+.social__links-after {
+	border-right: 1px solid #E5E5E5;
+	padding-right: 20px;
+	margin-right: 20px;
+}
+
+.social__search img {
+	vertical-align: middle;
+}
+
+.page__indent {
+	margin-bottom: 100px;
+}
+
+.page__bg {
+	position: absolute;
+}
+
+.page__body {
+	margin: 0 auto;
+	position: relative;
+	max-width: 542px;
+	padding: 192px 0;
+}
+
+.body__name {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.66;
+	color: #E5E5E5;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+[class*="__title"] {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #212529;
+}
+
+.title__white {
+	text-align: center;
+	color: #F8F9FA;
+}
+
+.design__top {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	gap: 293px;
+}
+
+.body__top {
+	margin-bottom: 45px;
+}
+
+.body-top__kinds {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	gap: 25px;
+	align-items: center;
+	flex: 1 0 auto;
+}
+
+.design__block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 30px;
+	row-gap: 40px;
+}
+
+.block__item {
+	max-width: 393px;
+}
+
+.item__date {
+	font-weight: 300;
+	line-height: 1.66;
+	color: #495057;
+	margin-bottom: 15px;
+}
+
+.item__text {
+	font-size: 16px;
+	line-height: 1.56;
+	color: #212529;
+}
+
+.item__img {
+	margin-bottom: 30px;
+}
+
+.design__indent {
+	margin-bottom: 100px;
+}
+
+.body__content {
+	position: relative;
+}
+
+.content-trend {
+	margin-bottom: 100px;
+}
+
+.content-trend__header {
+	margin-bottom: 40px;
+}
+
+.content__body {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-left: 50px;
+	padding-bottom: 50px;
+}
+
+.content__date {
+	font-weight: 300;
+	color: #E5E5E5;
+	margin-bottom: 15px;
+}
+
+.content__text {
+	font-size: 16px;
+	line-height: 1.56;
+	color: #F8F9FA;
+	max-width: 293px;
+}
+
+.text__transfer {
+	max-width: 343px;
+}
+
+.block__size {
+	max-width: 817px;
+}
+
+.content-trend__block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 30px;
+}
+
+.footer {
+	background: #212529;
+	color:rgba(248, 249, 250, 0.5);
+	padding: 100px 0;
+}
+
+.footer__logo {
+	color: #F8F9FA;
+}
+
+.footer__contacts {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	gap: 25px;
+}
+
+.footer__top,
+.footer__bottom {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__top {
+	border-bottom: 1px solid rgba(229, 229, 229, 0.2);
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+
+
