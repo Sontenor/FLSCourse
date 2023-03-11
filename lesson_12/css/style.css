@@ -1,0 +1,339 @@
+@import url("fonts.css");
+/* Шрифты */
+
+@import url("reset.css");     
+/* Обнуление */
+
+[class*='__container'] {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+main {
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 65px;
+	padding-top: 100px;
+}
+
+.box__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgba(0, 128, 0, 0.428);
+	position:relative;
+}
+
+.box__body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #3c2f2f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+}
+
+.box__text	{
+	font-family:'Gill Sans', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+
+.box-translate:hover {
+	transform: translate(30px, -10%);
+}
+
+.box-scale:hover {
+	transform: scale(-1.2, 0.8);
+}
+
+.box-rotate:hover {
+	transform: rotate(-420deg);
+}
+
+.box-skew:hover {
+	transform: skew(40deg, 20deg);
+}
+
+.box-matrix:hover {
+	transform: matrix(1.18, -0.68, -0.46, 0.78, 50, -40);
+}
+
+.box-multi:hover {
+	transform: translate(30px, 10px) scale(0.8, 0.7) rotate(130deg) skew(10deg, 20deg);
+}
+
+.box-transform:hover {
+	transform: rotate(-50deg) scale(0.8);
+}
+
+.box-transform {
+	transform-origin: top right;
+}
+
+.box__item_perspective {
+	perspective: 400px;
+}
+
+.box-perspective {
+	transform-origin: 0 0;
+}
+
+.box-perspective:hover {
+	transform: rotateY(80deg)
+}
+
+.box-translate {
+	transform-origin: center;
+}
+
+.box-translate:hover {
+	transform: translate3d(10px, -30px, 50px);
+}
+
+.box-scale {
+	transform-origin: top right;
+}
+
+.box-scale:hover {
+	transform: scale3d(1.2, 1.3, 2);
+}
+
+.box-rotate {
+	transform-origin: center left;
+}
+
+.box-rotate:hover {
+	transform: rotate3d(-1, 2, 1, 60deg);
+}
+
+.box__body_multi3d {
+	transform-origin: center left;
+}
+
+.box__body_multi3d:hover {
+	transform: scale3d(0.8, 0.6, 5) rotate3d(-1, 2, 1, 60deg);
+}
+
+.box__style {
+	perspective: 400px;
+   transform-style: preserve-3d;
+}
+
+.box__transform_style {
+	transform-origin: bottom center;
+}
+
+.box__transform_style:hover {
+	transform: rotateX(40deg);
+}
+
+.box__backface {
+	perspective: 250px;
+}
+
+.box__backface_body {
+	transition: all 700ms ease;
+   transform-style: preserve-3d;
+}
+
+.box-front {
+	z-index: 2;
+   transform: rotateY(0deg);
+   backface-visibility: hidden;
+}
+
+.box-back {
+	transform: rotateY(-180deg);
+}
+
+.box__backface:hover .box__backface_body {
+	transform: rotateY(-180deg);
+}
+
+.car__body {
+	width: 700px;
+	height: 100px;
+	background-color: red;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 30% 0 0 0;
+}
+
+.car__front {
+	position: absolute;
+   top: -22px;
+   left: -7%;
+   border-radius: 91% 0 0 0;
+   width: 275px;
+   height: 122px;
+   background-color: red;
+}
+
+.car__body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -30px;
+   border-radius: 30%;
+   width: 100px;
+   height: 100px;
+	background-color: red;
+}
+
+.car__item {
+	z-index: 1;
+   width: 130px;
+   height: 119px;
+   background-color: #FFF;
+   position: absolute;
+	top: 13px;
+	left: 35px;
+	border-radius: 50% 50% 0% 0%;
+}
+
+.car__item_right {
+	left: 78%;
+}
+
+
+.car__wheel {
+	position: absolute;
+   width: 116px;
+   height: 116px;
+   background-color: #3c2f2f;
+   border-radius: 50%;
+   border: 9px solid black;
+   transform: translate(6%,9%);
+}
+
+[class*='wheel__item'] {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 5px;
+	height: 100%;
+	background-color: #706d6d;
+}
+
+.wheel__img {
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	width: 80%;
+}
+
+.wheel__item_1 {
+	transform: translate3d(47px,0,0) rotate(0deg) scale(1);
+	-moz-transform: translate3d(47px,0,0) rotate(0deg) scale(1);
+	-ms-transform: translate3d(47px,0,0) rotate(0deg) scale(1);
+	-webkit-transform: translate3d(47px,0,0) rotate(0deg) scale(1);
+	-o-transform: translate3d(47px,0,0) rotate(0deg) scale(1);
+}
+
+.wheel__item_2 {
+	transform: translate3d(47px,0,0) rotate(90deg) scale(1);
+	-moz-transform: translate3d(47px,0,0) rotate(90deg) scale(1);
+	-ms-transform: translate3d(47px,0,0) rotate(90deg) scale(1);
+	-webkit-transform: translate3d(47px,0,0) rotate(90deg) scale(1);
+	-o-transform: translate3d(47px,0,0) rotate(90deg) scale(1);
+}
+
+.wheel__item_3 {
+	transform: translate3d(47px,0,0) rotate(136deg) scale(1);
+	-moz-transform: translate3d(47px,0,0) rotate(136deg) scale(1);
+	-ms-transform: translate3d(47px,0,0) rotate(136deg) scale(1);
+	-webkit-transform: translate3d(47px,0,0) rotate(136deg) scale(1);
+	-o-transform: translate3d(47px,0,0) rotate(136deg) scale(1);
+}
+
+.wheel__item_4 {
+	transform: translate3d(47px,0,0) rotate(226deg) scale(1);
+	-moz-transform: translate3d(47px,0,0) rotate(226deg) scale(1);
+	-ms-transform: translate3d(47px,0,0) rotate(226deg) scale(1);
+	-webkit-transform: translate3d(47px,0,0) rotate(226deg) scale(1);
+	-o-transform: translate3d(47px,0,0) rotate(226deg) scale(1);
+}
+
+.car__top {
+	position: absolute;
+	width: 348px;
+	height: 100px;
+	background-color: red;
+	bottom: 82%;
+	left: 27%;
+	border-radius: 117% 0% 0% 0%;
+}
+
+.door {
+	position: absolute;
+	width: 333px;
+	height: 149px;
+	bottom: 10%;
+	left: 28%;
+	z-index: 2;
+	border-radius: 65% 16% 0% 0%;
+	transform: translate3d(0,0,0) rotate(0deg) scale(1);
+	-moz-transform: translate3d(0,0,0) rotate(0deg) scale(1);
+	-ms-transform: translate3d(0,0,0) rotate(0deg) scale(1);
+	-webkit-transform: translate3d(0,0,0) rotate(0deg) scale(1);
+	-o-transform: translate3d(0,0,0) rotate(0deg) scale(1);
+	border: 2px solid #a27373;
+	overflow: hidden;
+}
+
+.door__bottom {
+	position: absolute;
+	width: 103%;
+	height: 64%;
+	top: 66px;
+	left: -6px;
+	background: red;
+	transform: rotate(-5deg);
+}
+
+.door__glass {
+	position: absolute;
+   width: 100%;
+   height: 79px;
+   top: -13px;
+   left: 0;
+   background-color: #000000bd;
+   transform: rotate(-5deg);
+   border-bottom: 2px solid #bf7575;
+}
+
+.car__salon {
+	position: absolute;
+	top: 23px;
+	left: 8px;
+	width: 328px;
+	height: 135px;
+	border-radius: 74% 20% 0% 0%;
+}
+
+.car__back {
+	position: absolute;
+	width: 375px;
+	height: 163px;
+	background-color: red;
+	bottom: 25px;
+	right: -3px;
+	border-radius: 49% 100% 0% 0%;
+	z-index: -1;
+}
