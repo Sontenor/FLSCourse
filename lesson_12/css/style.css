@@ -313,9 +313,36 @@ main {
    height: 79px;
    top: -13px;
    left: 0;
-   background-color: #000000bd;
    transform: rotate(-5deg);
    border-bottom: 2px solid #bf7575;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	overflow: visible;
+	visibility: visible;
+}
+
+.door__glass:after {
+	content: '';
+	position:absolute;
+	width: 100%;
+	height: 100%;	
+	top: 0;
+	left: 0;
+	background-color: #000000bd;
+	transition: all 3s ease 0s;
+	-webkit-transition: all 3s ease 0s;
+	-moz-transition: all 3s ease 0s;
+	-ms-transition: all 3s ease 0s;
+	-o-transition: all 3s ease 0s;
+}
+
+.door__glass:hover:after {
+	top: 80px;
+	overflow: hidden;
+	visibility: hidden;
 }
 
 .car__salon {
