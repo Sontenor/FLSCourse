@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson_15</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header"></header>
+			<main class="page">
+				<div class="page__container">
+					<div class="page__form form">
+						<form class="form__delivery delivery" action="https://jsonplaceholder.typicode.com/posts" method="post">
+							<h2 class="delivery__title title">Shipping Address</h2>
+							<div class="delivery__account account">
+								<div class="account__items">
+									<div class="account__line line">
+										<label class="line__label" for="email">Email Address<span>*</span></label>
+										<input class="line__input" id="email" placeholder="roni_cost@example.com" name="email" type="text" autocomplete="off">
+									</div>
+									<div class="account__line line">
+										<label class="line__label" for="password">Password</label>
+										<input class="line__input" id="password" placeholder="******************" name="password" type="password" autocomplete="off">
+									</div>
+									<div class="account__line line">
+										<label class="line__label" for="postcode">Zip/Postal Code</label>
+										<input class="line__input" id="postcode" name="postcode" type="text" autocomplete="off">
+									</div>
+								</div>
+								<p class="account__text">
+									You already have an account with us. Sign in or continue as guest.
+								</p>
+								<div class="account__login">
+									<button type="submit" class="button">login</button>
+									<a class="account__link" href="#">Forgot Your Password?</a>
+								</div>
+							</div>
+							<div class="delivery-form_registration registration">
+								<div class="registration__line line">
+									<label class="line__label" for="first">First Name<span>*</span></label>
+									<input class="line__input" id="first" name="first" type="text" autocomplete="off">
+								</div>
+								<div class="registration__line line">
+									<label class="line__label" for="last">Last Name<span>*</span></label>
+									<input class="line__input" id="last" name="last" type="text" autocomplete="off">
+								</div>
+								<div class="registration__line line">
+									<label class="line__label" for="company">Company</label>
+									<input class="line__input" id="company" name="company" type="text" autocomplete="off">
+								</div>
+								<div class="registration__line line line__column">
+									<label class="line__label" for="address">Street Address<span>*</span></label>
+									<div class="line__column_items">
+										<input class="line__input" id="address" name="address" type="text" autocomplete="off">
+										<input class="line__input" id="address" name="address" type="text" autocomplete="off">
+										<input class="line__input" id="address" name="address" type="text" autocomplete="off">
+									</div>
+								</div>
+								<div class="registration__line line">
+									<label class="line__label" for="country">Country<span>*</span></label>
+									<input class="line__input" id="country" name="country" type="text" autocomplete="off">
+								</div>
+								<div class="registration__line line">
+									<label class="line__label" for="location">State/Province<span>*</span></label>
+									<select class="line__list" name="list">
+										<option value="select" selected disabled>Please select a region, state or province</option>
+										<option value="Greater London">Greater London</option>
+										<option value="South East England">South East England</option>
+										<option value="South West England">South West England</option>
+										<option value="West Midlands">West Midlands</option>
+									</select>
+								</div>
+							</div>
+							<div class="delivery-form_methods methods">
+								<h2 class="methods__title title">Shipping Methods</h2>
+								<div class="methods__radio radio">
+									<div class="radio__item radio__item_border">
+										<div class="radio__price">
+											<input checked type="radio" class="radio__input" id="flat-rate" required autocomplete="off" name="rate" value="fixed">
+											<label class="radio__label" for="flat-rate">$5.00</label>
+										</div>
+										<div class="radio__kinds">
+											<div class="radio__text">Fixed</div>
+											<div class="radio__text">Flat Rate</div>
+										</div>
+									</div>
+									<div class="radio__item">
+										<div class="radio__price">
+											<input type="radio" class="radio__input" id="table-rate" required autocomplete="off" name="rate" value="best-way">
+											<label class="radio__label" for="table-rate">$10.00</label>
+										</div>
+										<div class="radio__kinds">
+											<div class="radio__text">Table Rate</div>
+											<div class="radio__text">Best Way</div>
+										</div>
+									</div>
+								</div>
+								<div class="methods__button">
+									<button type="submit" class="button">next</button>
+									<a class="methods__link" href="#">back</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="billing__form form">
+						<form method="post" action="https://jsonplaceholder.typicode.com/posts" class="billing">
+							<div class="billing__header">
+								<h1 class="billing__header_title">Checkout</h1>
+								<p class="billing__header_text">There are 3 products in your cart</p>
+							</div>
+							<div class="billing__block">
+								<h2 class="billing__title">Billing Details</h2>
+								<div class="billing__items">
+									<div class="billing__item">
+										<input class="billing__input" placeholder="First name*" name="First name" type="text" autocomplete="off">
+									</div>
+									<div class="billing__item">
+										<input class="billing__input" placeholder="Last name*" name="Last name" type="text" autocomplete="off">
+									</div>
+									<div class="billing__item">
+										<input class="billing__input" placeholder="Address*" name="Address" type="text" autocomplete="off">
+									</div>
+									<div class="billing__item">
+										<input class="billing__input" placeholder="Address line 2" name="Address line 2" type="text" autocomplete="off">
+									</div>
+									<div class="billing__item">
+										<select class="billing__list" name="Country">
+											<option value="Country*" selected disabled>Country*</option>
+											<option value="Ukraine">Ukraine</option>
+											<option value="England">England</option>
+											<option value="Spane">Spane</option>
+											<option value="Italy">Italy</option>
+										</select>
+									</div>
+									<div class="billing__item">
+										<input class="billing__input" placeholder="City/Town*" name="City/Town" type="text" autocomplete="off">
+									</div>
+									<div class="billing__item">
+										<input class="billing__input" placeholder="Postcode / ZIP*" name="Postcode" type="text" autocomplete="off">
+									</div>
+									<div class="billing__item">
+										<input class="billing__input" placeholder="Phone*" name="Phone" type="tel" autocomplete="off">
+									</div>
+									<div class="billing__item">
+										<input class="billing__input" placeholder="Postcode / ZIP*" name="Postcode" type="text" autocomplete="off">
+									</div>
+									<div class="billing__item">
+										<input class="billing__input" placeholder="Phone*" name="Phone" type="tel" autocomplete="off">
+									</div>
+									<div class="billing__item billing__item_area">
+										<textarea class="billing__area" style="resize: none" placeholder="Additional information" autocomplete="off" name="message"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="billing__checkout checkout">
+								<div class="checkout__line">
+									<input class="checkout__input" type="checkbox" id="create-account" name="create-account" value="create-account">
+									<label class="checkout__label" for="create-account">Create Account</label>
+								</div>
+								<div class="checkout__line">
+									<input class="checkout__input" type="checkbox" id="different-address" name="different-address" value="different-address">
+									<label class="checkout__label" for="different-address">Ship to a different address?</label>
+								</div>
+							</div>
+							<div class="billing__button_wrapper">
+								<button type="submit" class="billing__button button__dark ">register</button>
+							</div>
+						</form>
+						<form class="discount__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+							<h2 class="discount__title">Apply Coupon to get discount!</h2>
+							<div class="coupon__line">
+								<input class="coupon__input" placeholder="Coupon code" type="text">
+								<button type="submit" class="discount__button button__dark">Apply Code</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	</body>	
+</html>
