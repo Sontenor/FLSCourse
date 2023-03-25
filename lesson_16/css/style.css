@@ -51,7 +51,7 @@ span {
 	color: #EB5757;
 }
 
-.account {
+.form__login {
 	border-bottom: 1px solid #C4C4C4;
 	padding-bottom: 36px;
 	margin-bottom: 39px;
@@ -144,7 +144,7 @@ textarea:focus::placeholder {
 	color: #59a7df;
 }
 
-.line__column_items {
+.line__column {
 	display: flex;
 	flex-direction: column;
 	gap: 13px;
@@ -255,7 +255,7 @@ textarea:focus::placeholder {
 	flex: 0 0 69px;
 }
 
-.methods__button {
+.methods__links {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -425,7 +425,7 @@ textarea:focus::placeholder {
 	margin-bottom: 25px;
 }
 
-.coupon__input {
+.discount__input {
 	padding: 12px 22px;
 	border: 1px solid #E7E7E7;
 	border-radius: 5px;

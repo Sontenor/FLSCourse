@@ -9,13 +9,13 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="header"></header>
+			<header class="header">Header</header>
 			<main class="page">
 				<div class="page__container">
 					<div class="page__form form">
-						<form class="form__delivery delivery" action="https://jsonplaceholder.typicode.com/posts" method="post">
-							<h2 class="delivery__title title">Shipping Address</h2>
-							<div class="delivery__account account">
+						<form class="form__login login" action="https://jsonplaceholder.typicode.com/posts" method="post">
+							<h2 class="login__title title">Shipping Address</h2>
+							<div class="login__account account">
 								<div class="account__items">
 									<div class="account__line line">
 										<label class="line__label" for="email">Email Address<span>*</span></label>
@@ -34,26 +34,28 @@
 									You already have an account with us. Sign in or continue as guest.
 								</p>
 								<div class="account__login">
-									<button type="submit" class="button">login</button>
+									<button class="account__button button" type="submit">login</button>
 									<a class="account__link" href="#">Forgot Your Password?</a>
 								</div>
 							</div>
+						</form>
+						<form class="delivery-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
 							<div class="delivery-form_registration registration">
 								<div class="registration__line line">
-									<label class="line__label" for="first">First Name<span>*</span></label>
-									<input class="line__input" id="first" name="first" type="text" autocomplete="off">
+									<label class="line__label" for="first-name">delivery-first-name<span>*</span></label>
+									<input class="line__input" id="first-name" name="first" type="text" autocomplete="off">
 								</div>
 								<div class="registration__line line">
-									<label class="line__label" for="last">Last Name<span>*</span></label>
-									<input class="line__input" id="last" name="last" type="text" autocomplete="off">
+									<label class="line__label" for="last-name">delivery-last-name<span>*</span></label>
+									<input class="line__input" id="last-name" name="last" type="text" autocomplete="off">
 								</div>
 								<div class="registration__line line">
 									<label class="line__label" for="company">Company</label>
 									<input class="line__input" id="company" name="company" type="text" autocomplete="off">
 								</div>
-								<div class="registration__line line line__column">
+								<div class="registration__line line">
 									<label class="line__label" for="address">Street Address<span>*</span></label>
-									<div class="line__column_items">
+									<div class="line__column">
 										<input class="line__input" id="address" name="address" type="text" autocomplete="off">
 										<input class="line__input" id="address" name="address" type="text" autocomplete="off">
 										<input class="line__input" id="address" name="address" type="text" autocomplete="off">
@@ -65,7 +67,7 @@
 								</div>
 								<div class="registration__line line">
 									<label class="line__label" for="location">State/Province<span>*</span></label>
-									<select class="line__list" name="list">
+									<select class="line__list" name="select a region">
 										<option value="select" selected disabled>Please select a region, state or province</option>
 										<option value="Greater London">Greater London</option>
 										<option value="South East England">South East England</option>
@@ -98,8 +100,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="methods__button">
-									<button type="submit" class="button">next</button>
+								<div class="methods__links">
+									<button type="submit" class="methods__button button">next</button>
 									<a class="methods__link" href="#">back</a>
 								</div>
 							</div>
@@ -115,10 +117,10 @@
 								<h2 class="billing__title">Billing Details</h2>
 								<div class="billing__items">
 									<div class="billing__item">
-										<input class="billing__input" placeholder="First name*" name="First name" type="text" autocomplete="off">
+										<input class="billing__input" placeholder="First name*" name="billing-first-name" type="text" autocomplete="off">
 									</div>
 									<div class="billing__item">
-										<input class="billing__input" placeholder="Last name*" name="Last name" type="text" autocomplete="off">
+										<input class="billing__input" placeholder="Last name*" name="billing-last-name" type="text" autocomplete="off">
 									</div>
 									<div class="billing__item">
 										<input class="billing__input" placeholder="Address*" name="Address" type="text" autocomplete="off">
@@ -171,15 +173,15 @@
 						</form>
 						<form class="discount__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
 							<h2 class="discount__title">Apply Coupon to get discount!</h2>
-							<div class="coupon__line">
-								<input class="coupon__input" placeholder="Coupon code" type="text">
+							<div class="discount__line">
+								<input class="discount__input" placeholder="Coupon code" type="text" name="Coupon code" autocomplete="off">
 								<button type="submit" class="discount__button button__dark">Apply Code</button>
 							</div>
 						</form>
 					</div>
 				</div>
 			</main>
-			<footer class="footer"></footer>
+			<footer class="footer">Footer</footer>
 		</div>
 	</body>	
 </html>
