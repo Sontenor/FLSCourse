@@ -19,7 +19,7 @@
 								<div class="account__items">
 									<div class="account__line line">
 										<label class="line__label" for="email">Email Address<span>*</span></label>
-										<input class="line__input" id="email" placeholder="roni_cost@example.com" name="email" type="text" autocomplete="off">
+										<input class="line__input" id="email" placeholder="roni_cost@example.com" required name="email" type="text" autocomplete="off">
 									</div>
 									<div class="account__line line">
 										<label class="line__label" for="password">Password</label>
@@ -34,7 +34,7 @@
 									You already have an account with us. Sign in or continue as guest.
 								</p>
 								<div class="account__login">
-									<button class="account__button button" type="submit">login</button>
+									<button class="button button__indent" type="submit">login</button>
 									<a class="account__link" href="#">Forgot Your Password?</a>
 								</div>
 							</div>
@@ -43,11 +43,11 @@
 							<div class="delivery-form_registration registration">
 								<div class="registration__line line">
 									<label class="line__label" for="first-name">First name<span>*</span></label>
-									<input class="line__input" id="first-name" name="first" type="text" autocomplete="off">
+									<input class="line__input" id="first-name" name="first" type="text" autocomplete="off" required>
 								</div>
 								<div class="registration__line line">
 									<label class="line__label" for="last-name">Last name<span>*</span></label>
-									<input class="line__input" id="last-name" name="last" type="text" autocomplete="off">
+									<input class="line__input" id="last-name" name="last" type="text" autocomplete="off" required>
 								</div>
 								<div class="registration__line line">
 									<label class="line__label" for="company">Company</label>
@@ -56,14 +56,14 @@
 								<div class="registration__line line">
 									<label class="line__label" for="address">Street Address<span>*</span></label>
 									<div class="line__column">
-										<input class="line__input" id="address" name="address" type="text" autocomplete="off">
-										<input class="line__input" id="address" name="address" type="text" autocomplete="off">
+										<input class="line__input" id="address" name="address" type="text" autocomplete="off" required>
+										<input class="line__input" type="text" autocomplete="off">
 										<input class="line__input" id="address" name="address" type="text" autocomplete="off">
 									</div>
 								</div>
 								<div class="registration__line line">
 									<label class="line__label" for="country">Country<span>*</span></label>
-									<input class="line__input" id="country" name="country" type="text" autocomplete="off">
+									<input class="line__input" id="country" name="country" type="text" autocomplete="off" required>
 								</div>
 								<div class="registration__line line">
 									<label class="line__label" for="location">State/Province<span>*</span></label>
@@ -101,14 +101,14 @@
 									</div>
 								</div>
 								<div class="methods__links">
-									<button type="submit" class="methods__button button">next</button>
+									<button type="submit" class="button">next</button>
 									<a class="methods__link" href="#">back</a>
 								</div>
 							</div>
 						</form>
 					</div>
 					<div class="billing__form form">
-						<form method="post" action="https://jsonplaceholder.typicode.com/posts" class="billing">
+						<form method="post" action="https://jsonplaceholder.typicode.com/posts" class="form__billing">
 							<div class="billing__header">
 								<h1 class="billing__header_title">Checkout</h1>
 								<p class="billing__header_text">There are 3 products in your cart</p>
