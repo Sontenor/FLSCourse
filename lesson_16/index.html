@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
-		<title>Lesson_15</title>
+		<title>Lesson_16</title>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -57,8 +57,8 @@
 									<label class="line__label" for="address">Street Address<span>*</span></label>
 									<div class="line__column">
 										<input class="line__input" id="address" name="address" type="text" autocomplete="off" required>
-										<input class="line__input" type="text" autocomplete="off">
-										<input class="line__input" id="address" name="address" type="text" autocomplete="off">
+										<input class="line__input" name="address" type="text" autocomplete="off">
+										<input class="line__input" name="address" type="text" autocomplete="off">
 									</div>
 								</div>
 								<div class="registration__line line">
@@ -67,7 +67,7 @@
 								</div>
 								<div class="registration__line line">
 									<label class="line__label" for="location">State/Province<span>*</span></label>
-									<select class="line__list" name="select a region">
+									<select class="line__list" id="location" name="select a region">
 										<option value="select" selected disabled>Please select a region, state or province</option>
 										<option value="Greater London">Greater London</option>
 										<option value="South East England">South East England</option>
@@ -81,7 +81,7 @@
 								<div class="methods__radio radio">
 									<div class="radio__item radio__item_border">
 										<div class="radio__price">
-											<input checked type="radio" class="radio__input" id="flat-rate" required autocomplete="off" name="rate" value="fixed">
+											<input checked type="radio" class="radio__input" id="flat-rate" required name="rate" value="fixed">
 											<label class="radio__label" for="flat-rate">$5.00</label>
 										</div>
 										<div class="radio__kinds">
@@ -91,7 +91,7 @@
 									</div>
 									<div class="radio__item">
 										<div class="radio__price">
-											<input type="radio" class="radio__input" id="table-rate" required autocomplete="off" name="rate" value="best-way">
+											<input type="radio" class="radio__input" id="table-rate" required name="rate" value="best-way">
 											<label class="radio__label" for="table-rate">$10.00</label>
 										</div>
 										<div class="radio__kinds">
