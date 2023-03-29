@@ -1024,8 +1024,11 @@ textarea:focus::placeholder {
 	.discount__line {
 		justify-content: center;
 	}
-	.form__container {
+	.form {
 		padding-bottom: 50px;
+	}
+	.discount__title {
+		font-size: 19px
 	}
 }
 
@@ -1070,7 +1073,7 @@ textarea:focus::placeholder {
 	[class*=__container] {
 		padding: 0 10px;
 	}
-	.form__container {
+	.page__form {
 		padding-bottom: 50px;
 	}
 	.examples__items {
