@@ -367,12 +367,15 @@ body {
 
 /* ===================================================== */
 
-
-.form__container {
+.form {
 	padding-bottom: 100px;
 }
 
-.form {
+.form__container {
+	max-width: 730px;
+}
+
+.form__wrapper {
 	max-width: 606px;
 	font-family:'Roboto+Serif', sans-serif;
 	font-style: normal;
@@ -381,9 +384,10 @@ body {
 	line-height: 1;
 	color: #3F3F3F;
 	margin: 0 auto;
+	padding-bottom: 100px;
 }
 
-.billing__form,
+.form__billing,
 .billing__list {
 	font-family: 'Inter', sans-serif;
 	font-style: normal;
@@ -486,7 +490,7 @@ textarea:focus::placeholder {
 	background-color: #8b8181;
 }
 
-.button__indent {
+.button-indent {
 	margin-right: 25px;
 }
 
@@ -519,7 +523,7 @@ textarea:focus::placeholder {
 	margin-bottom: 46px;
 }
 
-.delivery__form {
+.form__delivery {
 	margin-bottom: 80px;
 }
 
@@ -648,7 +652,7 @@ textarea:focus::placeholder {
 	margin-bottom: 35px;
 }
 
-.billing__form {
+.form__billing {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -659,7 +663,7 @@ textarea:focus::placeholder {
 	margin-bottom: 55px;
 }
 
-.billing__header_title {
+.billing__header-title {
 	font-weight: 700;
 	font-size: 44px;
 	line-height: 0.8;
@@ -742,7 +746,9 @@ textarea:focus::placeholder {
 	margin-bottom: 25px;
 }
 
-.button__dark {
+.discount__button,
+.billing__button {
+	align-self: center;
 	color: #FFFFFF;
 	background-color: #212B36;
 	border-radius: 5px;
@@ -755,12 +761,9 @@ textarea:focus::placeholder {
 	-o-transition: background-color 0.3s ease 0s;
 }
 
-.button__dark:hover {
+.billing__button:hover,
+.discount__button:hover {
 	background-color:#2a4b6d;
-}
-
-.billing__button_wrapper {
-	text-align: center;
 }
 
 .checkout {
@@ -993,10 +996,10 @@ textarea:focus::placeholder {
 	.achivement {
 		margin-bottom: 30px;
 	}
-	.delivery__form {
+	.form__delivery {
 		margin-bottom: 40px;
 	}
-	.billing__header_title {
+	.billing__header-title {
 		font-size: 30px;
 		margin-bottom: 15px;
 	}
@@ -1012,10 +1015,10 @@ textarea:focus::placeholder {
 		padding: 15px;
 	}
 	.checkout,
-	.billing__form  {
+	.form__billing  {
 		margin-bottom: 40px;
 	}
-	.discount__form {
+	.form__discount {
 		text-align: center;
 	}
 	.discount__line {
