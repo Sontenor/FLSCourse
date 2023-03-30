@@ -384,7 +384,6 @@ body {
 	line-height: 1;
 	color: #3F3F3F;
 	margin: 0 auto;
-	padding-bottom: 100px;
 }
 
 .form__billing,
@@ -767,7 +766,7 @@ textarea:focus::placeholder {
 }
 
 .checkout {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .discount__title {
@@ -1069,6 +1068,12 @@ textarea:focus::placeholder {
 	}
 }
 
+@media (max-width: 498px) {
+	.line {
+		flex-direction: column;
+	}
+}
+
 @media (max-width: 487px) {
 	[class*=__container] {
 		padding: 0 10px;
@@ -1091,9 +1096,6 @@ textarea:focus::placeholder {
 }
 
 @media (max-width: 466px) {
-	.line {
-		flex-direction: column;
-	}
 	.registration__title {
 		margin-bottom: 10px;
 	}
