@@ -412,7 +412,7 @@ span {
 	margin-bottom: 34px;
 }
 
-.registration__form {
+.registration {
 	border-bottom: 1px solid #C4C4C4;
 	padding-bottom: 36px;
 	margin-bottom: 39px;
@@ -1092,6 +1092,10 @@ textarea:focus::placeholder {
 	}
 	.delivery__block {
 		margin-bottom: 20px;
+	}
+	.registration {
+		padding-bottom: 25px;
+		margin-bottom: 25px;
 	}
 }
 
