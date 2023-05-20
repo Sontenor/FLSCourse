@@ -1,0 +1,78 @@
+%title{
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 1.29;
+	text-transform: uppercase;
+	margin-bottom: 7px;
+}
+
+%text{
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 25px;
+	line-height: 1.48;
+	letter-spacing: 0.01em;
+}
+
+%button {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	border: 2px solid #000000;
+	padding: 14px 45.84px;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background-color: #000;
+		color: #fff;
+	}
+}
+
+%link-img {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+%img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	transition: transform 0.8s ease 0s;
+}
+
+%button__swiper {
+	width: 40px;
+	height: 40px;
+	background: url('../img/shop-img/Vector-swiper.svg') center no-repeat;
+	border: 2px solid #C4C4C4;
+	cursor: pointer;
+}
+
+%title__border {
+	font-weight: 500;
+	font-size: 56px;
+	line-height: 1.29;
+	text-transform: uppercase;
+	margin-bottom: 17px;
+	position: relative;
+	border-right: 2px solid black;
+	padding: 23px 0 10px;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 91.854%;
+		height: 2px;
+		top: 0;
+		right: 0;
+		background-color: #000;
+	}
+}
+
+
+
+
